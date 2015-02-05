@@ -6,6 +6,8 @@ $config['app'] = array(
 	'baseUrl'       => null,
 	'index'			=> true,				// use index.php in url?
     'mode'          => 'development', 		// development, production
-	'locale'		=> 'pt-PT',				// app locale
-	'timezone'		=> 'Europe/Lisbon',		// app timezone
+	'locale'		=> 'pt_PT',
+	'language'		=> 'en',
+	'currency'		=> 'EUR',
+	'timezone'		=> 'Europe/Lisbon',
 );

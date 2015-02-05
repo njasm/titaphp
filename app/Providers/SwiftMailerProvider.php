@@ -74,7 +74,7 @@ class SwiftMailer implements MailerInterface
 
     public function __construct()
     {
-        $this->app = \Classes\App::getInstance();
+        $this->app = Application::getInstance();
     }
 
     public function send(array $params)

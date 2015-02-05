@@ -5,7 +5,7 @@ class HomeController extends \App\Http\BaseController
 
     public function getString()
     {
-//		$this->Logger->log("login censas", \TitaPHP \Classes\Logger::ERROR);
+		$this->Logger->log("login censas", \TitaPHP\Foundation\Logger::ERROR);
 		return "teste";
     }
 
@@ -25,7 +25,6 @@ class HomeController extends \App\Http\BaseController
 	public function sendEmail(\Providers\MailerInterface $mailer)
 	{
 		$mailer->send(['nunochaves@sapo.pt', 'teste', 'teste']);
-
 		return "";
 	}
 
