@@ -10,12 +10,12 @@ $config['services'] = [
      * Register service providers here
      */
     'app-providers' => [
-		'\Providers\WhoopsProvider',
-		'\Providers\FileSystemProvider',
-		'\Providers\EloquentProvider',
-		'\Providers\PlatesProvider',
-        '\Providers\LoggerProvider',
-        '\Providers\SwiftMailerProvider',
+		'\App\Providers\WhoopsProvider',
+		'\App\Providers\FileSystemProvider',
+//		'\App\Providers\EloquentProvider',
+		'\App\Providers\PlatesProvider',
+        '\App\Providers\LoggerProvider',
+        '\App\Providers\SwiftMailerProvider',
     ],
 
 	/*
@@ -40,13 +40,13 @@ $config['services'] = [
 
     ],
 	'app-failed-dispatch' => [
-		'\Events\ErrorHandler',
+		'\App\Events\ErrorHandler',
 	],
     'app-end' => [
-		'\Events\LoggerFile',
-		'\Events\LoggerDatabase',
+		'\App\Events\LoggerFile',
+//		'\App\Events\LoggerDatabase',
     ],
 	'app-error' => [
-		'\Events\ErrorHandler',
+		'\App\Events\ErrorHandler',
 	],
 ];

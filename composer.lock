@@ -867,12 +867,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TitaPHP/framework.git",
-                "reference": "8e5c3d2223e89ee13eaf787c38cfe5e8e8280f30"
+                "reference": "0bc1057da092a6072de2b666a7391efaa710ab09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/8e5c3d2223e89ee13eaf787c38cfe5e8e8280f30",
-                "reference": "8e5c3d2223e89ee13eaf787c38cfe5e8e8280f30",
+                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/0bc1057da092a6072de2b666a7391efaa710ab09",
+                "reference": "0bc1057da092a6072de2b666a7391efaa710ab09",
                 "shasum": ""
             },
             "require": {
@@ -885,15 +885,7 @@
             "type": "project",
             "autoload": {
                 "psr-4": {
-                    "Tita\\Composer\\": "src/framework/composer",
-                    "Classes\\": "classes",
-                    "Events\\": "events",
-                    "Providers\\": "lib/providers",
-                    "Http\\": "http",
-                    "Controller\\Site\\": "http/controllers",
-                    "Controller\\Console\\": "console/controllers",
-                    "Model\\": "app/models",
-                    "": "helpers"
+                    "TitaPHP\\": "src/TitaPHP/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -905,7 +897,7 @@
                 "framework",
                 "php framework"
             ],
-            "time": "2015-02-05 11:27:01"
+            "time": "2015-02-05 15:28:50"
         }
     ],
     "packages-dev": [],

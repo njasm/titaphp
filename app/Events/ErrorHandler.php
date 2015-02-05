@@ -1,4 +1,4 @@
-<?php namespace Events;
+<?php namespace App\Events;
 
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;
@@ -9,10 +9,10 @@ class ErrorHandler extends AbstractListener
 {
 	public function handle(EventInterface $event, $responseCode = 500, $e = null)
 	{
-		$app = \Classes\App::getInstance();
+		$app = \TitaPHP\Foundation\Application::getInstance();
 
 		if ($e instanceof \Exception || $e instanceof \ErrorException) {
-			$app->Logger->log(PHP_EOL.$e->getMessage().PHP_EOL.$e->getTraceAsString(), \Classes\Logger::FATAL);
+			$app->Logger->log(PHP_EOL.$e->getMessage().PHP_EOL.$e->getTraceAsString(), \TitaPHP\Foundation\Logger::FATAL);
 
 			if ($app->getConfig('app.mode') == 'development') {
 				$app->whoops->handleException($e);

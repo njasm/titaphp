@@ -1,11 +1,11 @@
-<?php namespace Controller\Site;
+<?php namespace App\Http\Site;
 
-class Home extends \Controller\BaseController
+class HomeController extends \App\Http\BaseController
 {
 
     public function getString()
     {
-		$this->Logger->log("login censas", \Classes\Logger::ERROR);
+//		$this->Logger->log("login censas", \TitaPHP \Classes\Logger::ERROR);
 		return "teste";
     }
 

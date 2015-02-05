@@ -1,25 +1,15 @@
-<?php namespace Controller\Site;
+<?php namespace App\Http\Site;
 
-use Classes\App;
 use Html;
 use Model\User as User;
 
-class Demo extends \Controller\BaseController
+class DemoController extends \App\Http\BaseController
 {
 
 	public function index()
 	{
 		$users = User::all();
 		return $this->View->render('site/demo/index', ['users' => $users]);
-	}
-
-	/**
-	 * Example for Named and Ordered params injection actions.
-	 */
-	public function test($id = '', \Classes\Controller $controller)
-	{
-
-		return 'var $id: ' . $id . ', $controller: ' . get_class($controller);
 	}
 
 	public function edit($id = null)

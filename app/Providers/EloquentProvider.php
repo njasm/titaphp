@@ -1,4 +1,4 @@
-<?php namespace Providers;
+<?php namespace App\Providers;
 
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;

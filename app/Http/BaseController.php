@@ -1,7 +1,7 @@
-<?php namespace Controller;
+<?php namespace App\Http;
 
 
-class BaseController extends \Classes\Controller
+class BaseController extends \TitaPHP\Http\Controller
 {
 
 	public function __construct()

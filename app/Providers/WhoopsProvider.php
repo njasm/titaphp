@@ -1,5 +1,6 @@
-<?php namespace Providers;
+<?php namespace App\Providers;
 
+use TitaPHP\Foundation\Application;
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;
 use League\Event\EventInterface;
@@ -17,7 +18,7 @@ class WhoopsProvider extends AbstractListener
 		$whoops->pushHandler($handler);
 		$whoops->register();
 
-		$app = \Classes\App::getInstance();
+		$app = Application::getInstance();
 		$app->whoops = $whoops;
 	}
 }

@@ -1,5 +1,6 @@
-<?php namespace Providers;
+<?php namespace App\Providers;
 
+use \TitaPHP\Foundation\Application;
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;
 use League\Event\EventInterface;
@@ -8,7 +9,7 @@ class SwiftMailerProvider extends AbstractListener
 {
     public function handle(EventInterface $event)
     {
-        $app = \Classes\App::getInstance();
+		$app = Application::getInstance();
         $config = $app->getConfig('mail.'. $app->getConfig('app.mode'));
 
         //set a mail transport - singleton

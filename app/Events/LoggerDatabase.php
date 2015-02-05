@@ -1,4 +1,4 @@
-<?php namespace Events;
+<?php namespace App\Events;
 
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;
@@ -9,7 +9,7 @@ class LoggerDatabase extends AbstractListener
 {
 	public function handle(EventInterface $event)
 	{
-		$app = \Classes\App::getInstance();
+		$app = \TitaPHP\Foundation\Application::getInstance();
 
 		$log = new Log();
 		$log->log = $app->Logger->getLogString();

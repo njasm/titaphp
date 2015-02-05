@@ -21,6 +21,6 @@ foreach (glob(CONFIG_PATH.'/*.php') as $configFile) {
 }
 
 // routes
-$app = \TitaPHP\Foundation\App::getInstance();
+$app = \TitaPHP\Foundation\Application::getInstance();
 $app->init($config);
 return $app;
