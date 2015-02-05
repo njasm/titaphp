@@ -7,11 +7,11 @@
 
 $config['db']['development'] = array(
     'driver'    => 'mysql',
-    'host'      => 'nunochaves.com',
+    'host'      => '',
     'port'      =>  3306,
-    'database'  => 'nchaves_jupitern_cms',
-    'username'  => 'nchaves_admin',
-    'password'  => 'nchaves81@',
+    'database'  => '',
+    'username'  => '',
+    'password'  => '',
     'prefix'    => '',
     'charset'   => "utf8",
     'collation' => "utf8_unicode_ci",
