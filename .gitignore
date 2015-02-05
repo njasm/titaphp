@@ -1,3 +1,18 @@
-/bootstrap/compiled.php
-.env.*.php
-.env.php
+/storage/tmp
+/storage/logs
+
+# temp files from editors
+*~
+*.bak
+.DS_Store
+Thumbs.db
+.buildpath
+.project
+.settings
+*.tmproj
+build
+.idea
+nbproject/
+
+# the composer package lock file and install directory
+/vendor
