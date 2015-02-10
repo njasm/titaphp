@@ -1,9 +1,9 @@
 <?php namespace App\Http\Site;
 
-use Html;
-use Model\User as User;
+use App\Http\BaseController;
+use App\Model;
 
-class DemoController extends \App\Http\BaseController
+class Demo extends BaseController
 {
 
 	public function index()

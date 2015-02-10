@@ -1,12 +1,13 @@
 <?php namespace App\Http;
 
+use TitaPHP\Foundation\Application;
 
-class BaseController extends \TitaPHP\Http\Controller
+class BaseController extends \Framework\Controller
 {
 
 	public function __construct()
 	{
-        parent::__construct();
+
 	}
 
 }

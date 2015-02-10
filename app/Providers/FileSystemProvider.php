@@ -1,20 +1,18 @@
 <?php namespace App\Providers;
 
-use \TitaPHP\Foundation\Application;
-use League\Event\AbstractListener;
-use League\Event\AbstractEvent;
-use League\Event\EventInterface;
+use TitaPHP\Foundation\ProviderInterface;
+use TitaPHP\Foundation\Application;
 use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local as LocalAdapter;
 
-class FileSystemProvider extends AbstractListener
+class FileSystemProvider implements ProviderInterface
 {
-	public function handle(EventInterface $event)
-	{
-		$app = Application::getInstance();
 
-		$app->container->set("FileSystem", function( $baseDir ) {
+	public function register(Application $app)
+	{
+		$app->set("FileSystem", function( $baseDir ) {
 			return new Filesystem(new LocalAdapter($baseDir));
 		});
 	}
+
 }

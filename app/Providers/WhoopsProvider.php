@@ -1,15 +1,14 @@
 <?php namespace App\Providers;
 
+use TitaPHP\Foundation\ProviderInterface;
 use TitaPHP\Foundation\Application;
-use League\Event\AbstractListener;
-use League\Event\AbstractEvent;
-use League\Event\EventInterface;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Handler\JsonResponseHandler;
 
-class WhoopsProvider extends AbstractListener
+class WhoopsProvider implements \Framework\ProviderInterface
 {
-	public function handle(EventInterface $event)
+
+	public function register(Application $app)
 	{
 		$whoops = new \Whoops\Run;
 		$whoops->allowQuit(false);
@@ -18,7 +17,7 @@ class WhoopsProvider extends AbstractListener
 		$whoops->pushHandler($handler);
 		$whoops->register();
 
-		$app = Application::getInstance();
-		$app->whoops = $whoops;
+		$app->set('whoops', $whoops);
 	}
+
 }

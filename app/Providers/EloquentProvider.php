@@ -1,19 +1,19 @@
 <?php namespace App\Providers;
 
-use League\Event\AbstractListener;
-use League\Event\AbstractEvent;
-use League\Event\EventInterface;
-use \Illuminate\Database\Capsule\Manager as DatabaseManager;
+use TitaPHP\Foundation\ProviderInterface;
+use TitaPHP\Foundation\Application;
+use Illuminate\Database\Capsule\Manager as DatabaseManager;
 
-class EloquentProvider extends AbstractListener
+class EloquentProvider implements ProviderInterface
 {
-    public function handle(EventInterface $event)
+
+    public function register(Application $app)
     {
-        $app = \Classes\App::getInstance();
-		$appMode = $app->getConfig('app.mode');
+		$appMode = $app->getConfig('app.settings.mode');
 		$database = new DatabaseManager;
 		$database->addConnection($app->getConfig('db.'.$appMode));
 		$database->setAsGlobal();
 		$database->bootEloquent();
     }
+
 }

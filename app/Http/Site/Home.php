@@ -1,12 +1,18 @@
 <?php namespace App\Http\Site;
 
-class HomeController extends \App\Http\BaseController
+use App\Http\BaseController;
+use TitaPHP\Foundation\Application;
+
+class Home extends BaseController
 {
 
-    public function getString()
+    public function getString( \Framework\Logger $log )
     {
-		$this->Logger->log("login censas", \TitaPHP\Foundation\Logger::ERROR);
-		return "teste";
+		die(get_class($log));
+		$logger = $this->app->get('Logger');
+		$logger->log("login censas 1111", \Framework\Logger::ERROR);
+		$logger->log("login censas 2222", \Framework\Logger::ERROR);
+		return "egwewg";
     }
 
 	public function getJson()
@@ -16,15 +22,16 @@ class HomeController extends \App\Http\BaseController
 
     public function getXML()
     {
-        $response = $this->app->Response;
+        $response = $this->app->get('Response');
 		$response->headers->set("content-type", "text/xml");
 		$response->setContent("<cenas></cenas>");
 		return $response;
     }
 
-	public function sendEmail(\Providers\MailerInterface $mailer)
+	public function sendEmail()
 	{
-		$mailer->send(['nunochaves@sapo.pt', 'teste', 'teste']);
+		$this->container->get('Mail.send', ['nunochaves@sapo.pt', 'teste', 'teste']);
+
 		return "";
 	}
 
