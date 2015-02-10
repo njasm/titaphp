@@ -5,7 +5,7 @@ use TitaPHP\Foundation\Application;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Handler\JsonResponseHandler;
 
-class WhoopsProvider implements \Framework\ProviderInterface
+class WhoopsProvider implements ProviderInterface
 {
 
 	public function register(Application $app)

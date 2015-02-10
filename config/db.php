@@ -18,13 +18,13 @@ $config['db']['development'] = array(
 );
 
 $config['db']['production'] = array(
-	'driver'    => 'mysql',
-	'host'      => '',
-	'port'      =>  3306,
-	'database'  => '',
-	'username'  => '',
-	'password'  => '',
-	'prefix'    => '',
-	'charset'   => "utf8",
-	'collation' => "utf8_unicode_ci",
+    'driver'    => 'mysql',
+    'host'      => 'nunochaves.com',
+    'port'      => 3306,
+    'database'  => '',
+    'username'  => '',
+    'password'  => '',
+    'prefix'    => '',
+    'charset'   => "utf8",
+    'collation' => "utf8_unicode_ci",
 );

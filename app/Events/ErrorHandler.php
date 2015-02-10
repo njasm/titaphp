@@ -14,7 +14,7 @@ class ErrorHandler extends AbstractListener
 		$app = Application::instance();
 
 		if ($e instanceof \Exception || $e instanceof \ErrorException) {
-			$app->get('Logger')->log(PHP_EOL.$e->getMessage().PHP_EOL.$e->getTraceAsString(), \Framework\Logger::FATAL);
+			$app->get('Logger')->log(PHP_EOL.$e->getMessage().PHP_EOL.$e->getTraceAsString(), \TitaPHP\Foundation\Logger::FATAL);
 
 			if ($app->getConfig('app.settings.mode') == 'development') {
 				$app->get('whoops')->handleException($e);

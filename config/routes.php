@@ -4,17 +4,16 @@
 
 $config['routes'] = array(
 	// demo
-	array('GET', 'demo-index', 'Site\Demo:index', 'demo-index'),
-	array('GET', '/test/[i:id]?', 'Site\Demo:test', 'demo-test'),
-	array('GET|POST', 'demo-edit/[i:id]?', 'Site\Demo:edit', 'demo-edit'),
-	array('GET', 'demo-delete/[i:id]', 'Site\Demo:delete', 'demo-delete'),
+	array('GET', '/demo-index', 'Site\Demo:index', 'demo-index'),
+	array('GET|POST', '/demo-edit/[i:id]?', 'Site\Demo:edit', 'demo-edit'),
+	array('GET', '/demo-delete/[i:id]', 'Site\Demo:delete', 'demo-delete'),
 
 
     // Site
-	array('GET', '', 'Site\Home:getString', 'home'),
-    array('GET', 'getJson', 'Site\Home:getJson', 'getJson'),
-    array('GET', 'getXML', 'Site\Home:getXML', 'getXML'),
-    array('GET', 'sendEmail', 'Site\Home:sendEmail', 'sendEmail'),
+	array('GET', '/', 'Site\Home:getString', 'home'),
+    array('GET', '/getJson', 'Site\Home:getJson', 'getJson'),
+    array('GET', '/getXML', 'Site\Home:getXML', 'getXML'),
+    array('GET', '/sendEmail', 'Site\Home:sendEmail', 'sendEmail'),
 
 
 	// APP

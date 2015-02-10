@@ -6,12 +6,12 @@ use TitaPHP\Foundation\Application;
 class Home extends BaseController
 {
 
-    public function getString( \Framework\Logger $log )
+    public function getString( \TitaPHP\Foundation\Logger $log )
     {
 		die(get_class($log));
 		$logger = $this->app->get('Logger');
-		$logger->log("login censas 1111", \Framework\Logger::ERROR);
-		$logger->log("login censas 2222", \Framework\Logger::ERROR);
+		$logger->log("login censas 1111", \TitaPHP\Foundation\Logger::ERROR);
+		$logger->log("login censas 2222", \TitaPHP\Foundation\Logger::ERROR);
 		return "egwewg";
     }
 

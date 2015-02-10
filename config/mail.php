@@ -6,21 +6,21 @@
  * */
 
 $config['mail']['development'] = array(
-	'server'    => '',
+	'server'    => 'smtp.sapo.pt',
 	'port'      => 25,
-	'username'  => '',
-	'password'  => '',
-	'from'		=> '',
-	'fromName'	=> '',
-	'replyTo'	=> '',
+	'username'  => 'nc1981@sapo.pt',
+	'password'  => 'nc1981@',
+	'from'		=> 'nunochaves@sapo.pt',
+	'fromName'	=> 'Nuno Chaves',
+	'replyTo'	=> 'nunochaves@sapo.pt',
 );
 
 $config['mail']['production'] = array(
-	'server'    => '',
-	'port'      => 25,
-	'username'  => '',
-	'password'  => '',
-	'from'		=> '',
-	'fromName'	=> '',
-	'replyTo'	=> '',
+    'server'    => 'smtp.sapo.pt',
+    'port'      => 25,
+    'username'  => 'nc1981@sapo.pt',
+    'password'  => 'nc1981@',
+    'from'		=> 'nunochaves@sapo.pt',
+    'fromName'	=> 'Nuno Chaves',
+    'replyTo'	=> 'nunochaves@sapo.pt',
 );
