@@ -3,6 +3,7 @@
     "description": "TitaPHP - simple yet powerful PHP framework",
     "keywords": [ "php framework" ],
     "license": "MIT",
+    "minimum-stability": "dev",
     "require": {
         "php": ">= 5.4.0",
         "titaphp/framework": "dev-master@dev",
