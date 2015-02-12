@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">= 5.4.0",
-        "titaphp/framework": "0.0.**",
+        "titaphp/framework": "0.0.*",
         "league/flysystem": "0.5.*",
         "filp/whoops": "1.*",
         "illuminate/database": "4.2.*",
