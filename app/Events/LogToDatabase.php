@@ -1,16 +1,16 @@
 <?php namespace App\Events;
 
 use App\Model\Log;
-use TitaPHP\Foundation\Application;
+use Framework\Application;
 use League\Event\AbstractListener;
 use League\Event\AbstractEvent;
 use League\Event\EventInterface;
 
-class LoggerDatabase extends AbstractListener
+class LogToDatabase extends AbstractListener
 {
 	public function handle(EventInterface $event)
 	{
-		$logger = Application::instance()->get('Logger');
+		$logger = Application::instance()->get('Log');
 
 		$log = new Log();
 		$log->log = $logger->getLogString();

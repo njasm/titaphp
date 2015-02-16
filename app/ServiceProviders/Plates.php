@@ -1,10 +1,10 @@
-<?php namespace App\Providers;
+<?php namespace App\ServiceProviders;
 
-use TitaPHP\Foundation\ProviderInterface;
-use TitaPHP\Foundation\Application;
+use Framework\Application;
+use Framework\ServiceProviderInterface;
 use League\Plates\Extension\URI;
 
-class PlatesProvider implements ProviderInterface
+class Plates implements ServiceProviderInterface
 {
 
 	public function register(Application $app)

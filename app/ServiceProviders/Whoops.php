@@ -1,11 +1,11 @@
-<?php namespace App\Providers;
+<?php namespace App\ServiceProviders;
 
-use TitaPHP\Foundation\ProviderInterface;
-use TitaPHP\Foundation\Application;
+use Framework\Application;
+use Framework\ServiceProviderInterface;
 use Whoops\Handler\PrettyPageHandler;
 use Whoops\Handler\JsonResponseHandler;
 
-class WhoopsProvider implements ProviderInterface
+class Whoops implements ServiceProviderInterface
 {
 
 	public function register(Application $app)
@@ -17,7 +17,7 @@ class WhoopsProvider implements ProviderInterface
 		$whoops->pushHandler($handler);
 		$whoops->register();
 
-		$app->set('whoops', $whoops);
+		$app->set('Whoops', $whoops);
 	}
 
 }

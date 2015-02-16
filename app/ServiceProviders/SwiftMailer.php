@@ -1,9 +1,9 @@
-<?php namespace App\Providers;
+<?php namespace App\ServiceProviders;
 
-use TitaPHP\Foundation\ProviderInterface;
-use TitaPHP\Foundation\Application;
+use Framework\Application;
+use Framework\ServiceProviderInterface;
 
-class SwiftMailerProvider implements ProviderInterface
+class SwiftMailer implements ServiceProviderInterface
 {
 
 	public function register(Application $app)

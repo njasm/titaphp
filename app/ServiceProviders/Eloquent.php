@@ -1,10 +1,10 @@
-<?php namespace App\Providers;
+<?php namespace App\ServiceProviders;
 
-use TitaPHP\Foundation\ProviderInterface;
-use TitaPHP\Foundation\Application;
+use Framework\Application;
+use Framework\ServiceProviderInterface;
 use Illuminate\Database\Capsule\Manager as DatabaseManager;
 
-class EloquentProvider implements ProviderInterface
+class Eloquent implements ServiceProviderInterface
 {
 
     public function register(Application $app)

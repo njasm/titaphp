@@ -22,11 +22,11 @@ $config['app']['settings'] = array(
  * matter to access previous registered providers
  * */
 $config['app']['providers'] = [
-	'\App\Providers\WhoopsProvider',
-	'\App\Providers\FileSystemProvider',
-	'\App\Providers\EloquentProvider',
-	'\App\Providers\PlatesProvider',
-	'\App\Providers\SwiftMailerProvider',
+	'\App\ServiceProviders\Whoops',
+	'\App\ServiceProviders\FileSystem',
+	'\App\ServiceProviders\Eloquent',
+	'\App\ServiceProviders\Plates',
+	'\App\ServiceProviders\SwiftMailer',
 ];
 
 /*
@@ -35,7 +35,7 @@ $config['app']['providers'] = [
  *   app-start - This hook is invoked right after the app start
  *   app-before-dispatch - This hook is invoked before the current matching route is dispatched
  *   app-after-dispatch - This hook is invoked after the current matching route is dispatched and successfully executed
- *   app-failed-dispatch - This hook is invoked when router cannot match request
+ *   app-failed-dispatch - This hook is invoked when router cannot match request url
  *   app-end - This hook is invoked after the Response is sent to the client.
  *   app-error - This hook is invoked when a application error occurred
  *
@@ -53,11 +53,11 @@ $config['app']['events'] = [
 
 	],
 	'app-failed-dispatch' => [
-		'\App\Events\ErrorHandler',
+		'\App\Events\DispatchFailed',
 	],
 	'app-end' => [
-		'\App\Events\LoggerFile',
-		'\App\Events\LoggerDatabase',
+		'\App\Events\LogToFile',
+		//'\App\Events\LogToDatabase',
 	],
 	'app-error' => [
 		'\App\Events\ErrorHandler',
