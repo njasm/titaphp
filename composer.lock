@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2982bf2ef7b96f4d9cab6cfeda8c9b90",
+    "hash": "831405abf2d9afa2713978e3cc48d048",
     "packages": [
         {
             "name": "adamwathan/form",
@@ -867,12 +867,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TitaPHP/framework.git",
-                "reference": "4cd5dd0ed5302cbe6b45cdc781cb14ccca7e343d"
+                "reference": "0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/4cd5dd0ed5302cbe6b45cdc781cb14ccca7e343d",
-                "reference": "4cd5dd0ed5302cbe6b45cdc781cb14ccca7e343d",
+                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75",
+                "reference": "0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75",
                 "shasum": ""
             },
             "require": {
@@ -900,7 +900,7 @@
                 "framework",
                 "php framework"
             ],
-            "time": "2015-02-16 11:08:21"
+            "time": "2015-02-16 22:27:40"
         }
     ],
     "packages-dev": [],

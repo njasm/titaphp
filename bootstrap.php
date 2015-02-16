@@ -19,8 +19,3 @@ $config = array();
 foreach (glob(CONFIG_PATH.'/*.php') as $configFile) {
     require $configFile;
 }
-
-// routes
-$app = \TitaPHP\Foundation\Application::instance();
-$app->setConfigs($config);
-return $app;

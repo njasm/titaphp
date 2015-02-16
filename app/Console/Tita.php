@@ -4,3 +4,4 @@ use \TitaPHP\Console\Application;
 
 $app = Application::instance();
 $app->run();
+cd
