@@ -1,8 +1,7 @@
 <?php namespace App\ServiceProviders;
 
-use Framework\Application;
-use Framework\ServiceProviderInterface;
-use League\Plates\Extension\URI;
+use TitaPHP\Foundation\Application;
+use TitaPHP\Foundation\ServiceProviderInterface;
 
 class Plates implements ServiceProviderInterface
 {

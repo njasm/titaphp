@@ -1,7 +1,7 @@
 <?php namespace App\ServiceProviders;
 
-use Framework\Application;
-use Framework\ServiceProviderInterface;
+use TitaPHP\Foundation\Application;
+use TitaPHP\Foundation\ServiceProviderInterface;
 use Illuminate\Database\Capsule\Manager as DatabaseManager;
 
 class Eloquent implements ServiceProviderInterface
