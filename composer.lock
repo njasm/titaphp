@@ -812,6 +812,63 @@
             "time": "2015-01-18 13:49:36"
         },
         {
+            "name": "symfony/console",
+            "version": "2.7.x-dev",
+            "target-dir": "Symfony/Component/Console",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "289113e60aad754d35b50347f66ecd3a4d96d03c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/289113e60aad754d35b50347f66ecd3a4d96d03c",
+                "reference": "289113e60aad754d35b50347f66ecd3a4d96d03c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1|~3.0.0",
+                "symfony/process": "~2.1|~3.0.0"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                },
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "http://symfony.com",
+            "time": "2015-02-12 11:03:31"
+        },
+        {
             "name": "symfony/http-foundation",
             "version": "2.3.x-dev",
             "target-dir": "Symfony/Component/HttpFoundation",
@@ -867,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TitaPHP/framework.git",
-                "reference": "0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75"
+                "reference": "3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75",
-                "reference": "0ce27c24c7b3b788b6bb0776ff23c7b5c997fb75",
+                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d",
+                "reference": "3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d",
                 "shasum": ""
             },
             "require": {
@@ -880,6 +937,7 @@
                 "league/event": "2.*",
                 "njasm/container": "1.2.*",
                 "php": ">= 5.4.0",
+                "symfony/console": "~2.6",
                 "symfony/http-foundation": "2.3.*"
             },
             "require-dev": {
@@ -900,7 +958,7 @@
                 "framework",
                 "php framework"
             ],
-            "time": "2015-02-16 22:27:40"
+            "time": "2015-02-17 22:19:31"
         }
     ],
     "packages-dev": [],

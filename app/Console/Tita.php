@@ -1,6 +1,7 @@
 <?php namespace App\Console;
 
-use \TitaPHP\Console\Application;
+require_once __DIR__ . '/../../bootstrap.php';
 
-$app = Application::instance();
+$app = \TitaPHP\Console\Application::instance();
+$app->setConfigs($config);
 $app->run();

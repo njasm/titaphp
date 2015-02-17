@@ -34,7 +34,7 @@ $config['app']['providers'] = [
  * The order of the commands is irrelevant
  */
 $config['app']['commands'] = [
-    'App\Console\HelloWorldCommand',
+    '\App\Console\HelloWorldCommand',
 ];
 
 /**
