@@ -924,12 +924,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/TitaPHP/framework.git",
-                "reference": "3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d"
+                "reference": "6146bfba59c451d6e91b3299ca4b7f9457543001"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d",
-                "reference": "3d9bc3a2285510e833c7ddaf5f290f3fe961ea5d",
+                "url": "https://api.github.com/repos/TitaPHP/framework/zipball/6146bfba59c451d6e91b3299ca4b7f9457543001",
+                "reference": "6146bfba59c451d6e91b3299ca4b7f9457543001",
                 "shasum": ""
             },
             "require": {
@@ -958,7 +958,7 @@
                 "framework",
                 "php framework"
             ],
-            "time": "2015-02-17 22:19:31"
+            "time": "2015-02-17 23:50:56"
         }
     ],
     "packages-dev": [],
