@@ -1,8 +1,8 @@
 <?php
 
-/*
+/**
  * Application general settings
- * */
+ */
 $config['app']['settings'] = array(
 	'debug'         => true,
     'basePath'      => null,
@@ -16,7 +16,7 @@ $config['app']['settings'] = array(
 );
 
 
-/*
+/**
  * Register your application providers here
  * The order in with you register your providers
  * matter to access previous registered providers
@@ -29,7 +29,15 @@ $config['app']['providers'] = [
 	'\App\ServiceProviders\SwiftMailer',
 ];
 
-/*
+/**
+ * Register your application console commands here
+ * The order of the commands is irrelevant
+ */
+$config['app']['commands'] = [
+    'App\Console\HelloWorldCommand',
+];
+
+/**
  * Register events here
  * List of app life-cycle event hooks available:
  *   app-start - This hook is invoked right after the app start

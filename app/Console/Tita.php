@@ -1,4 +1,4 @@
-<?php namespace TitaPHP\Console;
+<?php namespace App\Console;
 
 use \TitaPHP\Console\Application;
 
